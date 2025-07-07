@@ -59,7 +59,7 @@ export default async function Dashboard() {
           <div className="bg-white rounded-lg shadow-sm divide-y divide-gray-200">
             {postedJobs.length === 0 ? (
               <p className="p-6 text-gray-500 text-center">
-                You haven't posted any jobs yet.
+                You haven&apos;t posted any jobs yet.
               </p>
             ) : (
               postedJobs.map((job) => (
@@ -111,7 +111,7 @@ export default async function Dashboard() {
           <div className="bg-white rounded-lg shadow-sm divide-y divide-gray-200">
             {applications.length === 0 ? (
               <p className="p-6 text-gray-500 text-center">
-                You haven't applied to any jobs yet.
+                You haven&apos;t applied to any jobs yet.
               </p>
             ) : (
               applications.map((application) => (

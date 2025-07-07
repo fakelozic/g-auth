@@ -20,7 +20,7 @@ export async function applyJob(jobID: string) {
     if (existingApplication) {
       return console.log("You already have applied for this job");
     }
-    const application = await prisma.application.create({
+    await prisma.application.create({
       data: {
         jobId: jobID as string,
         userId: session?.user?.id as string,

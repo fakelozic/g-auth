@@ -26,6 +26,9 @@ export default function ApplyButton({ jobID }: { jobID: string }) {
       }
     }
   };
+  if (errorMessage) {
+    return <p>{errorMessage}</p>;
+  }
   if (status === "loading") {
     return (
       <>
